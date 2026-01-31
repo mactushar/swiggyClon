@@ -1,0 +1,14 @@
+@layer base {
+  html {
+    font-family: "gilroy", system-ui, sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+   
+    
+  }
+  h2{
+
+    font-size:1.5em;
+    font-weight: bold;
+  }
+}
