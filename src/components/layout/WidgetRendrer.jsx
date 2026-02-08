@@ -19,6 +19,10 @@ const WIDGET_MAP = {
 };
 
 const WidgetRendrer = (data) => {
+
+ console.log(data)
+
+
  
   
 

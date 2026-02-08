@@ -11,7 +11,7 @@ const TopRestorants = ({data}) => {
    <div className=''> 
 
     <h2 className=' pt-7 pb-4.5 '>{data?.data?.card?.card?.header?.title}</h2>
-    <div className='flex gap-8 overflow-x-scroll scrollbar-hide'>
+    <div className='flex gap-8 overflow-x-scroll scroll-smooth scrollbar-hide'>
     { data?.data?.card?.card?.gridElements?.infoWithStyle?.restaurants.map((el,i)=>{
 
       return <Card key={i} data={el}/>

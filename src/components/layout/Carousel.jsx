@@ -15,7 +15,7 @@ const Carousel = ({ data }) => {
           <NavIcon />
         </div>
 
-        <div className="flex w-full gap-10 overflow-x-scroll scrollbar-hide ">
+        <div className="flex w-full gap-10 overflow-x-scroll scroll-smooth scrollbar-hide ">
           {data?.data?.card?.card?.imageGridCards?.info.map((e) => {
             return (
               <CarouselCard key={e.id} data={e}/>

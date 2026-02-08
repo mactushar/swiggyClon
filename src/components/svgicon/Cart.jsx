@@ -1,6 +1,17 @@
 import React from "react";
 
 const Cart = ({ className }) => {
+
+
+
+
+
+
+  //https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/fries_ivyqs5
+//https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/fries_ivyqs5
+ //171a29 171a29 #eef0f5
+//https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/icecream_wwomsa 
+
   return (
     <span
       className={` relative flex items-center justify-center group ${className}`}

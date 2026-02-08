@@ -14,6 +14,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(true);
   console.log(isOpen);
+
   const navData = [
     {
       id: 0,
@@ -43,7 +44,7 @@ const Header = () => {
       id: 4,
       title: "Sign In",
       Icon: SignIn,
-      link: "/signin",
+      link: "/login",
     },
   ];
 
@@ -51,9 +52,11 @@ const Header = () => {
     <header className="text-base bg-white shadow-[0_15px_40px_-20px_rgba(40,44,63,.15)] p-4 lg:px-6 sticky top-0 z-10">
       <nav className="flex items-center justify-around lg:relative">
         <div className="flex gap-8 ">
-          <Logo
-            className={`transition-transform duration-200 ease-out hover:scale-105 cursor-pointer`}
-          />
+          <NavLink to={"/"}>
+            <Logo
+              className={`transition-transform duration-200 ease-out hover:scale-105 cursor-pointer`}
+            />
+          </NavLink>
 
           <div className="flex group gap-2 items-center cursor-pointer  ">
             <span className="font-semibold group-hover:text-[#ff5200] border-b-2">
@@ -77,7 +80,10 @@ const Header = () => {
           {navData.map((e) => {
             return (
               <li className="font-semibold  text-[rgba(2,6,12,.9)] " key={e.id}>
-                <NavLink className=" cursor-pointer flex gap-3 items-center group hover:text-[#ff5200] ">
+                <NavLink
+                  to={e.link}
+                  className=" cursor-pointer flex gap-3 items-center group hover:text-[#ff5200] "
+                >
                   {
                     <e.Icon className="text-[rgba(2,6,12,.9)] group-hover:text-[#ff5200]" />
                   }
